@@ -38,7 +38,7 @@ public class DaoImpl implements Dao {
     public ArrayList<Employee> getByLastName(String lastName) {
         ArrayList<Employee> result = new ArrayList<>();
         for (Employee employee : EmployeeStore.getEmployeeStore()) {
-            if (employee.getLastName().toLowerCase().contains(lastName.toLowerCase())) {
+            if (employee.getLastName().toLowerCase().contains(lastName.toLowerCase())) { //Fixed partial match!
                 result.add(employee);
             }
         }
