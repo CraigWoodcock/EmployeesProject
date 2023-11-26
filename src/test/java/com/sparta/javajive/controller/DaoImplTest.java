@@ -17,17 +17,17 @@ class DaoImplTest {
     ArrayList<Employee> employees = new ArrayList<>();
     DaoImpl daoImpl = new DaoImpl(employees);
 
-    @BeforeAll
-    public static void set() {
-        EmployeeStore.initializeEmployeeStore(100);
-        Employee employee = new Employee(11111, "Mr", "Fergus", 'R', "Thompson", "M", "example1@hotmail.com", "14/03/1991", "06/11/2023", 19000);
-        EmployeeStore.addEmployee(employee);
-    }
+//    @BeforeAll
+//    public static void set() {
+//        EmployeeStore.initializeEmployeeStore(100);
+//        Employee employee = new Employee(11111, "Mr", "Fergus", 'R', "Thompson", "M", "example1@hotmail.com", "14/03/1991", "06/11/2023", 19000);
+//        EmployeeStore.addEmployee(employee);
+//    }
 
-    @BeforeAll
-    static void setUpAll() {
-        set();
-    }
+//    @BeforeAll
+//    static void setUpAll() {
+//        set();
+//    }
 
     @Test
     void getByIdNoneFoundTest() {

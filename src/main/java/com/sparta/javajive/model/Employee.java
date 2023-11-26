@@ -7,7 +7,7 @@ public class Employee {
     private String firstName;
     private Character midInit;
     private String lastName;
-    private String gender;
+    private String gender;// String to char
     private String email;
     private String dateOfBirth;
     private String dateOfJoining;
